@@ -5,12 +5,11 @@ Algorithm that is widely used in pathfinding and graph traversal, the process of
 A* Algorithm Pseudocode
 
 function A*(start,goal)
-    closedset := the empty set    // The set of nodes already evaluated.
-    openset := {start}    // The set of tentative nodes to be evaluated, initially containing the start node
-    came_from := the empty map    // The map of navigated nodes.
+    closedset := the empty set 
+    openset := {start}
+    came_from := the empty map
  
-    g_score[start] := 0    // Cost from start along best known path.
-    // Estimated total cost from start to goal through y.
+    g_score[start] := 0
     f_score[start] := g_score[start] + heuristic_cost_estimate(start, goal)
  
     while openset is not empty
