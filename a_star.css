@@ -1,0 +1,18 @@
+body{text-align:center;}
+div.cell{
+	width:20px;
+	height:20px;
+	float:left;
+	border:thin solid black;
+}
+div.cell.obstaculo{background-color:black;}
+div.cell.abierto{background-color:white;}
+div.cell.esRuta{background-color:blue;}
+div.cell.inicio,div.cell.fin{border-color:#0FF;}
+div.cell.inicio{background-color:red;}
+div.cell.fin{background-color:red;}
+div.clear{clear:both;}
+div#tablero{
+	display:inline-block;
+	margin-top:20px;
+}
